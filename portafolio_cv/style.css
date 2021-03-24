@@ -28,6 +28,7 @@ html {
   font-family: var(--font);
   font-size: 16px;
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 *,
@@ -125,6 +126,11 @@ p {
   list-style: none;
   animation: carouselAnimation 12s ease-in-out 3s;
   transition: transform 0.5s ease-in-out;
+}
+.carousel .slides blockquote{
+  width: 80%;
+  text-align: center;
+  margin: 1rem auto;
 }
 #slide-1:checked ~ .slides {
   /* dividir el 100% entre el num de slides */
@@ -256,6 +262,7 @@ p {
 .menu.is-active {
   opacity: 1;
   pointer-events: auto;
+  /* width: 90vw; */
 }
 
 .menu a {
@@ -477,7 +484,7 @@ progress::-moz-progress-bar {
   bottom: 0;
   z-index: 999;
   padding: 1rem;
-  width: 100%;
+  width: 100vw;
   height: var(--header-height);
   background-color: var(--second-color);
 }
@@ -530,6 +537,9 @@ progress::-moz-progress-bar {
 
 .portfolio-modal {
   max-width: 400px;
+  min-width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -587,6 +597,8 @@ progress::-moz-progress-bar {
   .portfolio-modal {
     flex-direction: row;
     max-width: 800px;
+    min-width: 800px;
+    height: 400px;
   }
   .portfolio-info {
     margin-left: 1rem;
