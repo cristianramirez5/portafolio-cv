@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const d = document;
 
 export default function searchFilters(input, selector) {
@@ -16,22 +15,3 @@ export default function searchFilters(input, selector) {
     }
   });
 }
-=======
-const d = document;
-
-export default function searchFilters(input, selector) {
-  d.addEventListener("keyup", (e) => {
-    if (e.target.matches(input)) {
-      // console.log(e.target.value);
-
-        if (e.target.value === "Escape") e.target.value = "";
-
-      d.querySelectorAll(selector).forEach((el) =>
-        el.textContent.toLowerCase().includes(e.target.value)
-          ? el.classList.remove("filter")
-          : el.classList.add("filter")
-      );
-    }
-  });
-}
->>>>>>> 9bfe6f96b883c5fb5a829c897e2a20955d4f14fe
