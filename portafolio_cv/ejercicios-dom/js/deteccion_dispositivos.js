@@ -58,7 +58,7 @@ export default function userDevieInfo(id) {
     }
 
     /* Redirecciones */
-    if (isMobile.android()) {
+    /* if (isMobile.android()) {
         window.location.href = `https://youtu.be/_JZom_gVfuw`;
-    }
+    } */
 }
