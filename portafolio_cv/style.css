@@ -399,6 +399,7 @@ progress::-moz-progress-bar {
   margin-left: 0;
   margin-right: 0;
   max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .gray-scale {
@@ -545,7 +546,11 @@ progress::-moz-progress-bar {
   flex-direction: column;
   background-color: var(--white-color);
 }
-
+.portfolio-modal img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .portfolio-details {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -593,12 +598,16 @@ progress::-moz-progress-bar {
   .portfolio > .container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    gap: 1rem;
   }
   .portfolio-modal {
     flex-direction: row;
     max-width: 800px;
     min-width: 800px;
     height: 400px;
+  }
+  .portfolio-modal img{
+    width: 50%;
   }
   .portfolio-info {
     margin-left: 1rem;
